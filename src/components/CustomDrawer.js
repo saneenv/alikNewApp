@@ -47,7 +47,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         <MenuButton
 
           title="HOME"
-          source={require("../assets/home.png")}
+          source={require("../../assets/home.png")}
           // source={{ uri: 'https://i.postimg.cc/FFc0w6KZ/ALIK-LOGO.png' }} 
 
           onPress={() => {
@@ -57,7 +57,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         />
         <MenuButton
           title="SEARCH"
-          source={require("../assets/searchnew.png")}
+          source={require("../../assets/searchnew.png")}
           onPress={() => {
             navigation.navigate("Search");
             onClose();
@@ -66,7 +66,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         {customerType !== "CUSTOMER" && (
           <MenuButton
             title="DASHBOARD"
-            source={require("../assets/dashboard.png")}
+            source={require("../../assets/dashboard.png")}
             onPress={() => {
               navigation.navigate("Dashboard");
               onClose();
@@ -76,7 +76,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
           {customerType === "CUSTOMER" && (
           <MenuButton
             title="DASHBOARD"
-            source={require("../assets/dashboard.png")}
+            source={require("../../assets/dashboard.png")}
             onPress={() => {
               navigation.navigate("DashboardCus");
               onClose();
@@ -86,7 +86,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         {customerType !== "CUSTOMER" && customerType !== "JS_EMPLOYEE" && customerType !== "JS_MANAGER" && customerType !== "TK_EMPLOYEE" && customerType !== "TK_MANAGER" && (
           <MenuButton
             title="ORDER LIST"
-            source={require("../assets/order.png")}
+            source={require("../../assets/order.png")}
             onPress={() => {
               navigation.navigate("Orders");
               onClose();
@@ -96,7 +96,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         {customerType !== "AGENT" && (
           <MenuButton
             title="CART"
-            source={require("../assets/cart.png")}
+            source={require("../../assets/cart.png")}
             onPress={() => {
               navigation.navigate("Cart");
               onClose();
@@ -105,7 +105,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         )}
         <MenuButton
           title="ABOUT US"
-          source={require("../assets/about.png")}
+          source={require("../../assets/about.png")}
           onPress={() => {
             navigation.navigate("About");
             onClose();
@@ -114,7 +114,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         {customerType !== "AGENT" && (
           <MenuButton
             title="RECEIPT"
-            source={require("../assets/receipts.png")}
+            source={require("../../assets/receipts.png")}
             onPress={() => {
               navigation.navigate("Receipt");
               onClose();
@@ -123,7 +123,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         )}
         <MenuButton
           title="LOGOUT"
-          source={require("../assets/logout.png")}
+          source={require("../../assets/logout.png")}
           onPress={handleLogout}
         />
       </View>
