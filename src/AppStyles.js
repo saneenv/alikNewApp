@@ -8,7 +8,7 @@ const SCREEN_WIDTH = width < height ? width : height;
 const recipeNumColums = 2;
 // item size
 const RECIPE_ITEM_HEIGHT = 150;
-const RECIPE_ITEM_MARGIN = 20;
+const RECIPE_ITEM_MARGIN = 20; //new
 
 // 2 photos per width
 export const RecipeCard = StyleSheet.create({
