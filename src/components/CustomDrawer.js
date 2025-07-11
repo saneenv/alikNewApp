@@ -4,6 +4,14 @@ import MenuButton from "../components/MenuButton/MenuButton";
 import { useAuth } from '../components/AuthContext';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import PropTypes from "prop-types";
+import Homeimg from "../../assets/home.png"
+import Searchimg from "../../assets/searchnew.png"
+import Dashboardimg from "../../assets/dashboard.png"
+import Cartimg from "../../assets/cart.png"
+import Orderlistimg from "../../assets/order.png"
+import Aboutusimg from "../../assets/about.png"
+import Receiptimg from "../../assets/receipts.png"
+import Logoutimg from "../../assets/logout.png"
 
 const CustomDrawer = ({ isOpen, onClose, navigation }) => {
   if (!isOpen) {
@@ -47,7 +55,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         <MenuButton
 
           title="HOME"
-          source={require("../../assets/home.png")}
+          source={Homeimg}
           // source={{ uri: 'https://i.postimg.cc/FFc0w6KZ/ALIK-LOGO.png' }} 
 
           onPress={() => {
@@ -57,7 +65,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         />
         <MenuButton
           title="SEARCH"
-          source={require("../../assets/searchnew.png")}
+          source={Searchimg}
           onPress={() => {
             navigation.navigate("Search");
             onClose();
@@ -66,7 +74,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         {customerType !== "CUSTOMER" && (
           <MenuButton
             title="DASHBOARD"
-            source={require("../../assets/dashboard.png")}
+            source={Dashboardimg}
             onPress={() => {
               navigation.navigate("Dashboard");
               onClose();
@@ -76,7 +84,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
           {customerType === "CUSTOMER" && (
           <MenuButton
             title="DASHBOARD"
-            source={require("../../assets/dashboard.png")}
+            source={Dashboardimg}
             onPress={() => {
               navigation.navigate("DashboardCus");
               onClose();
@@ -86,7 +94,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         {customerType !== "CUSTOMER" && customerType !== "JS_EMPLOYEE" && customerType !== "JS_MANAGER" && customerType !== "TK_EMPLOYEE" && customerType !== "TK_MANAGER" && (
           <MenuButton
             title="ORDER LIST"
-            source={require("../../assets/order.png")}
+            source={Orderlistimg}
             onPress={() => {
               navigation.navigate("Orders");
               onClose();
@@ -96,7 +104,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         {customerType !== "AGENT" && (
           <MenuButton
             title="CART"
-            source={require("../../assets/cart.png")}
+            source={Cartimg}
             onPress={() => {
               navigation.navigate("Cart");
               onClose();
@@ -105,7 +113,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         )}
         <MenuButton
           title="ABOUT US"
-          source={require("../../assets/about.png")}
+          source={Aboutusimg}
           onPress={() => {
             navigation.navigate("About");
             onClose();
@@ -114,7 +122,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         {customerType !== "AGENT" && (
           <MenuButton
             title="RECEIPT"
-            source={require("../../assets/receipts.png")}
+            source={Receiptimg}
             onPress={() => {
               navigation.navigate("Receipt");
               onClose();
@@ -123,7 +131,7 @@ const CustomDrawer = ({ isOpen, onClose, navigation }) => {
         )}
         <MenuButton
           title="LOGOUT"
-          source={require("../../assets/logout.png")}
+          source={Logoutimg}
           onPress={handleLogout}
         />
       </View>
