@@ -30,8 +30,8 @@
       "package": "com.alikstore.shopping.v2"
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-       "output": "static"
+      "bundler": "metro",
+      "output": "static"
     },
     "plugins": [
       [
