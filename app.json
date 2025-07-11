@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "AlikStore",
+    "slug": "alikstore",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.alikstore.shopping.v2",
+      "config": {
+        "usesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.alikstore.shopping.v2"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ],
+      "expo-secure-store"
+    ],
+    "owner": "japanapp",
+    "runtimeVersion": "1.0.1",
+    "updates": {
+      "url": "https://u.expo.dev/c0a05f50-5f3d-4f35-91af-dde81ba36658"
+    },
+    "extra": {
+      "API_URL": "http://202.21.37.226:86/api/onlineorder",
+      "DEBUG": true,
+      "eas": {
+        "projectId": "19159af6-538e-4bc4-b20c-f723ebec0c5e"
+      }
+    }
+  }
+}
