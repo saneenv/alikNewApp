@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "AlikStore",
-    "slug": "alikstore",
+    "slug": "alikapp",
     "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -43,7 +43,7 @@
       ],
       "expo-secure-store"
     ],
-    "owner": "alikstorejapan",
+    "owner": "alikappnew",
     "runtimeVersion": "1.0.1",
     "updates": {
       "url": "https://u.expo.dev/c0a05f50-5f3d-4f35-91af-dde81ba36658"
@@ -52,7 +52,7 @@
       "API_URL": "http://202.21.37.226:86/api/onlineorder",
       "DEBUG": true,
       "eas": {
-        "projectId": "358acc04-2573-4f6d-9f93-618e54402569"
+        "projectId": "7f3d1bb8-d335-4a35-a1ec-a0566e65fc00"
       }
     }
   }
